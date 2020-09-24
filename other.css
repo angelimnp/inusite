@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+section {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  width: 100%;
+  color: #3C6566;
+  font-size: 30px;
+  padding: 10px 0px 20px 0px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  color: #254B4D;
+  line-height: 20px;
+}
+
+figcaption {
+  padding: 10px;
+  font-style: italic;
+  font-size: 16px;
+  color: #CC6E64;
+  text-align: center;
+}
+
+ul {
+  padding: 0px 20px;
+  color: #254B4D;
+}
+
+table {
+  align-self: flex-start;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  border: 2px solid #3C6566;
+  padding: 5px 40px;
+  color: #254B4D;
+}
+
+#main {
+  margin: 30px 50px 50px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#title {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  margin: 0px 20px 20px 20px;
+  color: #254B4D;
+}
+
+#site-desc {
+  width: 55%;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 0px 10px;
+}
+
+#doggies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+}
+
+#doggies > img {
+  max-width: 491px;
+  max-height: 375px;
+}
+
+#bottom-qte {
+  width: 100%;
+  font-size: 40px;
+  margin: 50px 50px 0px;
+  padding: 40px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+#corgih {
+  width: 50%;
+  font-size: 25px;
+  color: #3C6566;
+  padding: 10px 0px 20px 0px;
+  text-align: left;
+}
+
+#moredoggies {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#moredoggies > li img {
+  max-width: 270px;
+  max-height: 180px;
+  padding: 10px;
+}
+
+.header {
+  width: 100%;
+  min-height: 50px;
+  background-color: #5B9799;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 25px;
+  bottom: 0;
+  position: fixed;
+  background-color: #5B9799;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  list-style: none;
+  font: 16px Helvetica, Arial;
+}
+
+.links li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 15px 100px;
+}
+
+.links li:hover {
+  background-color: #CCE5E5;
+}
+
+.links li a:hover {
+  color: #234157;
+}
+
+.dogname {
+  width: 100%;
+  color: #3C6566;
+  font-size: 30px;
+  padding: 10px 0px 20px 0px;
+}
+
+.dogdesc {
+  width: 55%;
+  line-height: 22px;
+  font-size: 18px;
+  padding: 10px 0px 10px;
+}
+
+@media all and (max-width: 600px) {
+  .links, .header {
+    flex-wrap: wrap;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+}
