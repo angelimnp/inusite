@@ -6,6 +6,8 @@
 body {
   background-color: white;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -13,8 +15,7 @@ section {
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 h2, h3 {
@@ -47,7 +48,6 @@ ul {
 }
 
 table {
-  align-self: flex-start;
   border-collapse: collapse;
   text-align: center;
 }
@@ -59,7 +59,7 @@ td {
 }
 
 #main {
-  margin: 30px 50px 50px;
+  margin: 30px 50px 30px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -99,7 +99,6 @@ td {
 #bottom-qte {
   width: 100%;
   font-size: 40px;
-  margin: 0px 50px 0px;
   padding: 40px;
   font-family: 'Dancing Script', cursive;
   text-align: center;
@@ -141,11 +140,10 @@ td {
   width: 100%;
   height: 25px;
   bottom: 0;
-  position: fixed;
   background-color: #5B9799;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: auto;
+  text-align: center;
+  padding-top: 10px;
   color: white;
 }
 
